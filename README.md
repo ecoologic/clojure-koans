@@ -43,12 +43,6 @@ I strongly recommend that you upgrade to lein 2 instead!
 
 ### Running the Koans
 
-If you're running from the zipfile, simply run
-
-`script/run` on Mac/\*nix
-
-`script\run` on Windows
-
 If you're running from a checkout using lein 2, run the koans via
 
 `lein koan run`
