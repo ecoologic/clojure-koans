@@ -8,5 +8,6 @@ target
 .lein-deps-sum
 .lein-plugins
 .lein-repl-history
+.nrepl-port
 
 src/koans/tmp.rb

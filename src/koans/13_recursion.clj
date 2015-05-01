@@ -15,16 +15,28 @@
 
 
 ; (defn recursive-reverse [coll]
-;   __)
+;   (if (= (count coll) 1)
+;     coll
+;     (conj (recursive-reverse (vec (rest coll))) (first coll))))
 (defn recursive-reverse [coll]
-  (if (= (count coll) 1)
-    coll
-    (conj (recursive-reverse (vec (rest coll))) (first coll))))
-; (recursive-reverse [1 2 3 4 5])
+  (loop [current-collection coll
+         reverted-collection '()]
+  (if (= current-collection '())
+    reverted-collection
+    (recur (rest current-collection)
+           (conj reverted-collection (first current-collection))))))
 
 
+; (defn factorial [n]
+;   (if (< n 3)
+;     n
+;     (* n (factorial (dec n)))))
 (defn factorial [n]
-  __)
+  (loop [current-n n acc 1]
+    (if (< current-n 3)
+      (* acc current-n)
+      (recur (dec current-n) (* acc current-n)))))
+
 
 (meditations
   "Recursion ends with a base case"
