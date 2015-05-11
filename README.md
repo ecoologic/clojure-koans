@@ -1,3 +1,10 @@
+
+* Working: Yes
+* Interesting: Yes
+* Progress: In progress
+* Purpose: Experiment
+
+
 # Clojure Koans
 
 The Clojure Koans are a fun and easy way to get started with Clojure - no
